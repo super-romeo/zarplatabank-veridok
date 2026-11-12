@@ -8,6 +8,10 @@
 <meta name="description" content="Для малого бизнеса: выписка банка разносится по статьям сама, зарплата считается, платёжки на выплату и налоги с зарплаты готовы к сроку.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Банк и зарплата</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Банк и зарплата</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Банк и зарплата без ручной разноски — выписка по статьям, расчёт зарплаты и платёжки к сроку</h1>
-    <p class="sub">Для небольших компаний и ИП с сотрудниками: операции по счёту разносятся по статьям автоматически, зарплата и налоги с неё считаются по табелю, а платёжки и напоминания о сроках готовы заранее — без таблиц, которые вечером сводит владелец.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для небольших компаний и ИП</p>
+      <h1 class="rise" style="--i:1" data-len="long">Банк и зарплата без ручной разноски&nbsp;<span class="soft">— выписка по статьям, расчёт зарплаты и платёжки к сроку</span></h1>
+      <p class="rise" style="--i:2">Для небольших компаний и ИП с сотрудниками: операции по счёту разносятся по статьям автоматически, зарплата и налоги с неё считаются по табелю, а платёжки и напоминания о сроках готовы заранее — без таблиц, которые вечером сводит владелец.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="158" font-size="40" fill="#0a1524" font-weight="600">Банк и зарплата</text><line x1="120" y1="198" x2="1080" y2="198" stroke="#dde2ea" stroke-width="3" fill="none" /><rect x="120" y="250" width="44" height="44" rx="8" fill="#12397a" /><text x="190" y="282" font-size="32" fill="#0a1524">по статьям</text><rect x="190" y="306" width="180" height="16" rx="8" fill="#dde2ea" /><rect x="120" y="360" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="190" y="392" font-size="32" fill="#0a1524">Расчёт зарплаты</text><rect x="190" y="416" width="220" height="16" rx="8" fill="#dde2ea" /><rect x="120" y="470" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="190" y="502" font-size="32" fill="#0a1524">Платёжки</text><rect x="190" y="526" width="260" height="16" rx="8" fill="#dde2ea" /><rect x="700" y="250" width="380" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="310" font-size="30" fill="#0a1524" font-weight="600">по табелю</text><rect x="740" y="440" width="48" height="180" rx="8" fill="#ffffff" /><rect x="820" y="500" width="48" height="120" rx="8" fill="#ffffff" /><rect x="900" y="410" width="48" height="210" rx="8" fill="#12397a" /><rect x="980" y="530" width="48" height="90" rx="8" fill="#ffffff" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Небольших компаний и ИП</dd></div>
+      <div><dt>Выписка</dt><dd>Разносятся по статьям автоматически</dd></div>
+      <div><dt>Как</dt><dd>Выписка по расчётному счёту</dd></div>
+      <div><dt>Доступ</dt><dd>Ранний доступ</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Разноска выписки</b><span>Операции по счёту сами раскладываются по статьям.</span><br><a class="btn" href="price.html" data-ev="feature_vypiska">Мне это нужно</a></div>
-      <div class="card"><b>Расчёт зарплаты</b><span>Зарплата, аванс и налоги с неё по табелю сотрудников.</span><br><a class="btn" href="price.html" data-ev="feature_zarplata">Мне это нужно</a></div>
-      <div class="card"><b>Платёжки к выплате</b><span>Платёжные поручения на зарплату и налоги для банка.</span><br><a class="btn" href="price.html" data-ev="feature_platezhki">Мне это нужно</a></div>
-      <div class="card"><b>Календарь сроков</b><span>Напоминание о выплатах и сроках уплаты заранее.</span><br><a class="btn" href="price.html" data-ev="feature_sroki">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="64" width="660" height="472" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="32" fill="#0a1524" font-weight="600">Разноска выписки</text><line x1="140" y1="470" x2="660" y2="470" stroke="#b9c3d2" stroke-width="4" fill="none" /><rect x="170" y="350" width="64" height="120" rx="8" fill="#dfe8f7" /><rect x="290" y="270" width="64" height="200" rx="8" fill="#dfe8f7" /><rect x="410" y="310" width="64" height="160" rx="8" fill="#dfe8f7" /><rect x="530" y="230" width="64" height="240" rx="8" fill="#12397a" /></svg></div>
+        <h3>Разноска выписки</h3><p>Операции по счёту сами раскладываются по статьям.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_vypiska">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="120" y="70" width="560" height="460" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="160" y="140" font-size="32" fill="#0a1524" font-weight="600">Расчёт зарплаты</text><rect x="160" y="190" width="360" height="18" rx="8" fill="#dde2ea" /><rect x="160" y="230" width="280" height="18" rx="8" fill="#b9c3d2" /><rect x="160" y="270" width="420" height="18" rx="8" fill="#dde2ea" /><rect x="160" y="310" width="220" height="18" rx="8" fill="#dde2ea" /><circle cx="560" cy="430" r="48" fill="#dfe8f7" /><polyline points="536,432 552,450 590,408" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Расчёт зарплаты</h3><p>Зарплата, аванс и налоги с неё по табелю сотрудников.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_zarplata">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="80" y="78" font-size="30" fill="#0a1524" font-weight="600">Платёжки к выплате</text><rect x="60" y="120" width="280" height="400" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="460" y="120" width="280" height="400" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="90" y="170" width="180" height="16" rx="8" fill="#dde2ea" /><rect x="90" y="210" width="140" height="16" rx="8" fill="#b9c3d2" /><rect x="90" y="250" width="200" height="16" rx="8" fill="#dde2ea" /><rect x="500" y="170" width="160" height="16" rx="8" fill="#12397a" /><rect x="500" y="210" width="190" height="16" rx="8" fill="#dde2ea" /><rect x="500" y="250" width="120" height="16" rx="8" fill="#dde2ea" /><line x1="340" y1="190" x2="460" y2="190" stroke="#b9c3d2" stroke-width="3" fill="none" /><line x1="340" y1="240" x2="460" y2="260" stroke="#b9c3d2" stroke-width="3" fill="none" /><line x1="340" y1="310" x2="460" y2="290" stroke="#12397a" stroke-width="3" fill="none" /></svg></div>
+        <h3>Платёжки к выплате</h3><p>Платёжные поручения на зарплату и налоги для банка.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_platezhki">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="64" width="660" height="472" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="32" fill="#0a1524" font-weight="600">Календарь сроков</text><rect x="140" y="200" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="270" y="200" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="400" y="200" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="530" y="200" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="290" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="270" y="290" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="400" y="290" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="530" y="290" width="100" height="64" rx="10" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="380" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="270" y="380" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="400" y="380" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="530" y="380" width="100" height="64" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Календарь сроков</h3><p>Напоминание о выплатах и сроках уплаты заранее.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_sroki">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Небольшая мастерская: владелец, шесть сотрудников, один расчётный счёт. Раньше владелец по вечерам переносил выписку в таблицу и считал зарплату вручную. Теперь операции за день уже разнесены по статьям, к авансу готов расчёт по табелю и платёжки, а за несколько дней до срока уплаты налогов с зарплаты приходит напоминание.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Небольшая мастерская: владелец, шесть сотрудников, один расчётный счёт. Раньше владелец по вечерам переносил выписку в таблицу и считал зарплату вручную. Теперь операции за день уже разнесены по статьям, к авансу готов расчёт по табелю и платёжки, а за несколько дней до срока уплаты налогов с зарплаты приходит напоминание.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="28" fill="#0a1524" font-weight="600" text-anchor="middle">по статьям</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="28" fill="#0a1524" font-weight="600" text-anchor="middle">по табелю</text><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="960" y="230" font-size="28" fill="#0a1524" font-weight="600" text-anchor="middle">напоминание</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="34" fill="#0a1524" font-weight="600">шесть сотрудников</text><rect x="170" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="254" y="440" width="64" height="64" rx="10" fill="#12397a" /><rect x="338" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="422" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="506" y="440" width="64" height="64" rx="10" fill="#12397a" /><rect x="590" y="440" width="64" height="64" rx="10" fill="#dfe8f7" /><text x="170" y="620" font-size="30" fill="#566174">разнесены по статьям</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>В небольшой компании операции по банку и зарплату часто ведёт сам владелец или бухгалтер на неполный день. Каждую неделю нужно понять, какие деньги пришли и ушли, разнести их по статьям, посчитать зарплату и аванс, подготовить платёжки на выплату и на налоги с зарплаты и не пропустить сроки. Большая часть этой работы повторяется из месяца в месяц и делается вручную.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>В небольшой компании операции по банку и зарплату часто ведёт сам владелец или бухгалтер на неполный день. Каждую неделю нужно понять, какие деньги пришли и ушли, разнести их по статьям, посчитать зарплату и аванс, подготовить платёжки на выплату и на налоги с зарплаты и не пропустить сроки. Большая часть этой работы повторяется из месяца в месяц и делается вручную.</p>
     <p>Ошибки здесь стоят денег. Платёж не на ту статью искажает картину прибыли, пропущенный срок уплаты оборачивается пенями, а неверно посчитанная зарплата — разговором с сотрудником и перерасчётом. Чем больше операций, тем больше времени уходит на сверку.</p>
     <p>Сервис берёт повторяющуюся часть на себя. Выписка по расчётному счёту загружается из банка, и операции раскладываются по статьям: выручка, оплата поставщикам, аренда, зарплата, налоги. Правила разноски запоминаются: если платёж арендодателю один раз отнесён к аренде, следующие такие платежи разносятся так же. Спорные операции сервис показывает отдельно, чтобы вы решили сами.</p>
     <p>Зарплата считается по табелю. Вы заводите сотрудников с окладами или ставками, отмечаете отработанное время, отпуска и больничные, и сервис считает аванс, зарплату и налоги с неё. По каждому сотруднику виден расчётный листок: из чего сложилась сумма к выплате.</p>
@@ -105,31 +139,34 @@
     <p>Перейти можно с начала любого месяца: подключить выписку, завести сотрудников и оклады и сверить первый расчёт с прежним. Если суммы совпали, дальше расчёт идёт в сервисе, а прошлые таблицы остаются в архиве.</p>
     <p>Сервис рассчитан на малый и средний бизнес в России — компании и ИП с одним-двумя расчётными счетами и сотрудниками в штате. Он помогает считать и готовить платежи, но не заменяет бухгалтера и не сдаёт отчётность за вас: ответственность за расчёты и отчёты остаётся за компанией.</p>
     <p>Сейчас сервис в подготовке: сначала мы проверяем, нужен ли он предпринимателям.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Что делает сервис?</h3>
-    <p>Разносит выписку банка по статьям, считает зарплату и налоги с неё по табелю и готовит платёжки и календарь сроков.</p>
-    <h3>Сервис сам списывает деньги со счёта?</h3>
-    <p>Нет. Платёжки выгружаются в банк, и каждый платёж подтверждаете вы.</p>
-    <h3>Можно работать вместе с бухгалтером?</h3>
-    <p>Да. Бухгалтер проверяет разноску и расчёт в том же сервисе и видит историю изменений.</p>
-    <h3>Сервис сдаёт отчётность?</h3>
-    <p>Нет. Он помогает считать и готовить платежи; отчётность и ответственность остаются за компанией.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он предпринимателям.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Что делает сервис?</h3><p>Разносит выписку банка по статьям, считает зарплату и налоги с неё по табелю и готовит платёжки и календарь сроков.</p></div>
+      <div class="split flip"><h3>Сервис сам списывает деньги со счёта?</h3><p>Нет. Платёжки выгружаются в банк, и каждый платёж подтверждаете вы.</p></div>
+      <div class="split flip"><h3>Можно работать вместе с бухгалтером?</h3><p>Да. Бухгалтер проверяет разноску и расчёт в том же сервисе и видит историю изменений.</p></div>
+      <div class="split flip"><h3>Сервис сдаёт отчётность?</h3><p>Нет. Он помогает считать и готовить платежи; отчётность и ответственность остаются за компанией.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он предпринимателям.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Опишите свою компанию</h2>
-    <p><label>Сколько сотрудников в штате<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>1–5</option><option>6–15</option><option>16–50</option><option>Больше 50</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Опишите свою компанию</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько сотрудников в штате<select data-ev-focus="form_start"><option value="">— выберите —</option><option>1–5</option><option>6–15</option><option>16–50</option><option>Больше 50</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Банк и зарплата</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Сервис помогает разносить операции, считать зарплату и готовить платежи. Не заменяет бухгалтера; ответственность за расчёты и отчётность остаётся за компанией.</p>
+  <p>Сервис помогает разносить операции, считать зарплату и готовить платежи. Не заменяет бухгалтера; ответственность за расчёты и отчётность остаётся за компанией.</p>
 </div></footer>
 
 </body>
